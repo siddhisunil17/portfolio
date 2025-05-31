@@ -8,6 +8,8 @@ export const Contact = () => {
     email: "",
     message: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{ success?: boolean; message?: string } | null>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -16,10 +18,40 @@ export const Contact = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+    
+    try {
+      const response = await fetch("https://formspree.io/f/xwpbeqql", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+      });
+      
+      if (response.ok) {
+        setFormData({ name: "", email: "", message: "" });
+        setSubmitStatus({ 
+          success: true, 
+          message: "Thank you for your message! I'll get back to you soon." 
+        });
+      } else {
+        setSubmitStatus({ 
+          success: false, 
+          message: "Oops! Something went wrong. Please try again." 
+        });
+      }
+    } catch (error) {
+      setSubmitStatus({ 
+        success: false, 
+        message: "Oops! Something went wrong. Please try again." 
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -103,6 +135,7 @@ export const Contact = () => {
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                   placeholder="Your full name"
+                  disabled={isSubmitting}
                 />
               </div>
 
@@ -119,6 +152,7 @@ export const Contact = () => {
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                   placeholder="your.email@example.com"
+                  disabled={isSubmitting}
                 />
               </div>
 
@@ -135,15 +169,32 @@ export const Contact = () => {
                   rows={5}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none"
                   placeholder="Tell me about your project or just say hello..."
+                  disabled={isSubmitting}
                 />
               </div>
+              
+              {submitStatus && (
+                <div className={`p-3 rounded-lg ${submitStatus.success ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
+                  {submitStatus.message}
+                </div>
+              )}
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 px-6 rounded-lg font-medium hover:shadow-lg transform hover:scale-105 transition-all duration-200 flex items-center justify-center gap-2"
+                disabled={isSubmitting}
+                className={`w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 px-6 rounded-lg font-medium hover:shadow-lg transform ${!isSubmitting && "hover:scale-105"} transition-all duration-200 flex items-center justify-center gap-2 ${isSubmitting ? "opacity-75 cursor-not-allowed" : ""}`}
               >
-                <Send size={20} />
-                Send Message
+                {isSubmitting ? (
+                  <>
+                    <span className="animate-spin h-5 w-5 border-2 border-white border-t-transparent rounded-full mr-2"></span>
+                    Sending...
+                  </>
+                ) : (
+                  <>
+                    <Send size={20} />
+                    Send Message
+                  </>
+                )}
               </button>
             </form>
           </div>
