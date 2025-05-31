@@ -24,13 +24,30 @@ export const Contact = () => {
     setSubmitStatus(null);
     
     try {
+      // Add form field validation
+      if (!formData.name || !formData.email || !formData.message) {
+        setSubmitStatus({ 
+          success: false, 
+          message: "Please fill out all fields." 
+        });
+        setIsSubmitting(false);
+        return;
+      }
+
       const response = await fetch("https://formspree.io/f/xwpbeqql", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
+          "Accept": "application/json"
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message
+        })
       });
+      
+      const data = await response.json();
       
       if (response.ok) {
         setFormData({ name: "", email: "", message: "" });
@@ -39,9 +56,10 @@ export const Contact = () => {
           message: "Thank you for your message! I'll get back to you soon." 
         });
       } else {
+        console.error("Form submission error:", data);
         setSubmitStatus({ 
           success: false, 
-          message: "Oops! Something went wrong. Please try again." 
+          message: data.error || "Oops! Something went wrong. Please try again." 
         });
       }
     } catch (error) {
@@ -121,7 +139,12 @@ export const Contact = () => {
 
           {/* Contact Form */}
           <div className="bg-white rounded-xl shadow-lg p-8">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form 
+              onSubmit={handleSubmit} 
+              className="space-y-6"
+              action="https://formspree.io/f/xwpbeqql"
+              method="POST"
+            >
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                   Name
