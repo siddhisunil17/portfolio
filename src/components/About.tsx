@@ -25,25 +25,6 @@ export const About = () => {
     }
   ];
 
-  const education = [
-    {
-      university: "University of Connecticut",
-      degree: "Master of Science in Data Science",
-      duration: "Aug 2024 - Present",
-      gpa: "3.78/4.0",
-      location: "Storrs, CT",
-      logo: "https://logos-world.net/wp-content/uploads/2023/01/University-of-Connecticut-Logo.png"
-    },
-    {
-      university: "University of Mumbai",
-      degree: "Bachelor of Engineering in Electronics Engineering", 
-      duration: "Aug 2017 - Jul 2021",
-      gpa: "7.78/10",
-      location: "Mumbai, India",
-      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/University_of_Mumbai_Logo.svg/1200px-University_of_Mumbai_Logo.svg.png"
-    }
-  ];
-
   return (
     <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -70,33 +51,6 @@ export const About = () => {
               Known for strong attention to detail and analytical thinking, I'm an excellent communicator 
               and team collaborator, seeking to leverage my background to support impactful, data-driven decisions.
             </p>
-
-            {/* Education Section */}
-            <div className="mt-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Education</h3>
-              <div className="space-y-6">
-                {education.map((edu, index) => (
-                  <div key={index} className="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
-                    <div className="flex items-start gap-4">
-                      <img 
-                        src={edu.logo} 
-                        alt={`${edu.university} logo`}
-                        className="w-16 h-16 object-contain rounded-lg"
-                      />
-                      <div className="flex-1">
-                        <h4 className="font-bold text-gray-900 text-lg">{edu.university}</h4>
-                        <p className="text-blue-600 font-semibold">{edu.degree}</p>
-                        <div className="flex flex-col sm:flex-row sm:justify-between mt-2">
-                          <span className="text-gray-600">{edu.duration}</span>
-                          <span className="text-gray-600">{edu.location}</span>
-                        </div>
-                        <p className="text-green-600 font-semibold mt-1">GPA: {edu.gpa}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

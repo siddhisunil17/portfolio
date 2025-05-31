@@ -6,7 +6,7 @@ export const Projects = () => {
     {
       title: "Movie Recommendation Chatbot",
       description: "Developed a semantic-search-based chatbot using a dataset of 343K+ IMDb movies (2000–2024). Used Hugging Face embeddings + Pinecone vector DB to enable real-time recommendation retrieval with under 1-second latency. Achieved over 92% accuracy in matching user query intents.",
-      image: "https://images.unsplash.com/photo-1489599516482-2b6bfdc2b62a?w=600&h=400&fit=crop",
+      image: "/images/projects/movie-chatbot.png",
       tech: ["Python", "RAG", "Hugging Face", "Pinecone", "PostgreSQL", "TMDb API"],
       github: "https://github.com/mohitbhoir789/movie-recommendation-chatbot",
       live: "#",
@@ -58,15 +58,13 @@ export const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden ${
-                project.featured ? 'lg:grid lg:grid-cols-2' : ''
-              }`}
+              className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden lg:grid lg:grid-cols-2 h-[500px]"
             >
-              <div className="relative overflow-hidden">
+              <div className="relative overflow-hidden h-full">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-64 lg:h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 {project.featured && (
                   <div className="absolute top-4 left-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium">
@@ -75,38 +73,38 @@ export const Projects = () => {
                 )}
               </div>
               
-              <div className="p-8">
+              <div className="p-8 flex flex-col h-full">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">{project.title}</h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">{project.description}</p>
+                <p className="text-gray-600 mb-6 leading-relaxed flex-grow">{project.description}</p>
                 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+                      className="px-3 py-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full text-sm font-medium"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
                 
-                <div className="flex space-x-4">
+                <div className="flex space-x-4 mt-auto">
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors duration-200"
+                    className="flex items-center gap-2 text-gray-700 hover:text-blue-600 transition-colors duration-200"
                   >
-                    <Github size={20} />
+                    <Github className="text-blue-600" size={20} />
                     <span>Code</span>
                   </a>
                   <a
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors duration-200"
+                    className="flex items-center gap-2 text-gray-700 hover:text-blue-600 transition-colors duration-200"
                   >
-                    <ExternalLink size={20} />
+                    <ExternalLink className="text-blue-600" size={20} />
                     <span>Live Demo</span>
                   </a>
                 </div>

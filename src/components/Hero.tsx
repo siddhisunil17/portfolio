@@ -43,7 +43,7 @@ export const Hero = () => {
           <div className="relative mx-auto w-64 h-64 mb-8">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur-xl opacity-30 animate-pulse"></div>
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+              src="/images/profile-picture.jpg"
               alt="Mohit Bhoir"
               className="relative w-full h-full object-cover rounded-full border-4 border-white shadow-2xl"
             />
