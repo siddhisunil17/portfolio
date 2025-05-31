@@ -9,6 +9,7 @@ export const Experience = () => {
       location: "Pune, India",
       duration: "Jul 2021 - Jul 2024",
       type: "Full-time",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Amdocs_logo.svg/2560px-Amdocs_logo.svg.png",
       achievements: [
         "Automated regression test suites using Selenium and Robot Framework, reducing release cycles by 30% and boosting deployment efficiency",
         "Engineered scalable ServiceNow workflows that eliminated ~40% of repetitive manual tasks, streamlining request processing time by 25%",
@@ -24,6 +25,7 @@ export const Experience = () => {
       location: "Mumbai, India", 
       duration: "Dec 2019 - Jan 2020",
       type: "Internship",
+      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Doordarshan_Logo.svg/1200px-Doordarshan_Logo.svg.png",
       achievements: [
         "Analyzed broadcast and signal data to identify viewership trends across 50+ programs",
         "Maintained electronics and network systems for 3 channels, ensuring 99.9% uptime",
@@ -61,10 +63,17 @@ export const Experience = () => {
                   </div>
                   
                   <div className="flex-1">
-                    <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
-                      <div>
-                        <h3 className="text-2xl font-bold text-gray-900 mb-2">{exp.title}</h3>
-                        <h4 className="text-xl font-semibold text-blue-600 mb-2">{exp.company}</h4>
+                    <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-4">
+                      <div className="flex items-start gap-4 mb-4 lg:mb-0">
+                        <img 
+                          src={exp.logo} 
+                          alt={`${exp.company} logo`}
+                          className="w-16 h-16 object-contain rounded-lg bg-white p-2 border border-gray-200"
+                        />
+                        <div>
+                          <h3 className="text-2xl font-bold text-gray-900 mb-2">{exp.title}</h3>
+                          <h4 className="text-xl font-semibold text-blue-600 mb-2">{exp.company}</h4>
+                        </div>
                       </div>
                       <div className="flex flex-col lg:items-end text-gray-600">
                         <div className="flex items-center gap-2 mb-1">
