@@ -3,11 +3,11 @@ import { GraduationCap, Brain, Database, Code } from "lucide-react";
 
 export const About = () => {
   const highlights = [
-    {
-      icon: <GraduationCap className="w-6 h-6" />,
-      title: "Education",
-      description: "MS in Data Science, University of Connecticut (GPA: 3.78/4.0), BE in Electronics and Telecommunication Engineering, Mumbai University"
-    },
+    // {
+    //   icon: <GraduationCap className="w-6 h-6" />,
+    //   title: "Education",
+    //   description: "MS in Data Science, University of Connecticut (GPA: 3.78/4.0), BE in Electronics and Telecommunication Engineering, Mumbai University"
+    // },
     {
       icon: <Brain className="w-6 h-6" />,
       title: "AI/ML Expertise", 
