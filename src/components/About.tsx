@@ -6,7 +6,7 @@ export const About = () => {
     {
       icon: <GraduationCap className="w-6 h-6" />,
       title: "Education",
-      description: "MS in Data Science (UConn) - GPA: 3.78/4.0, BE in Electronics Engineering"
+      description: "MS in Data Science, University of Connecticut (GPA: 3.78/4.0), BE in Electronics and Telecommunication Engineering, Mumbai University"
     },
     {
       icon: <Brain className="w-6 h-6" />,
