@@ -1,12 +1,13 @@
 
 import { ExternalLink, Github } from "lucide-react";
+import { getAssetPath } from "@/lib/asset-path";
 
 export const Projects = () => {
   const projects = [
     {
       title: "Movie Recommendation Chatbot",
       description: "Developed a semantic-search-based chatbot using a dataset of 343K+ IMDb movies (2000–2024). Used Hugging Face embeddings + Pinecone vector DB to enable real-time recommendation retrieval with under 1-second latency. Achieved over 92% accuracy in matching user query intents.",
-      image: "/images/projects/movie-chatbot.png",
+      image: "images/projects/movie-chatbot.png",
       tech: ["Python", "RAG", "Hugging Face", "Pinecone", "PostgreSQL", "TMDb API"],
       github: "https://github.com/mohitbhoir789/movie-recommendation-chatbot",
       live: "#",
@@ -62,7 +63,7 @@ export const Projects = () => {
             >
               <div className="relative overflow-hidden h-full">
                 <img
-                  src={project.image}
+                  src={project.image.startsWith('http') ? project.image : getAssetPath(project.image)}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />

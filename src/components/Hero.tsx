@@ -1,5 +1,6 @@
 
 import { ArrowDown, Download } from "lucide-react";
+import { getAssetPath } from "@/lib/asset-path";
 
 export const Hero = () => {
   return (
@@ -29,7 +30,7 @@ export const Hero = () => {
               <ArrowDown size={20} className="group-hover:translate-y-1 transition-transform duration-200" />
             </a>
             <a
-              href="/resume.pdf"
+              href={getAssetPath("resume.pdf")}
               target="_blank"
               rel="noopener noreferrer"
               className="border-2 border-gray-300 text-gray-700 hover:border-blue-600 hover:text-blue-600 px-8 py-4 rounded-full font-medium transition-all duration-200 flex items-center gap-2"
@@ -43,7 +44,7 @@ export const Hero = () => {
           <div className="relative mx-auto w-64 h-64 mb-8">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur-xl opacity-30 animate-pulse"></div>
             <img
-              src="/images/profile-picture.jpg"
+              src={getAssetPath("images/profile-picture.jpg")}
               alt="Mohit Bhoir"
               className="relative w-full h-full object-cover rounded-full border-4 border-white shadow-2xl"
             />
