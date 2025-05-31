@@ -6,7 +6,7 @@ export const Education = () => {
       degree: "Master of Science in Data Science",
       institution: "University of Connecticut",
       location: "Storrs, Connecticut",
-      period: "2022 - 2024",
+      period: "2024 - 2025",
       gpa: "3.78/4.0",
       details: [
         "Coursework: Machine Learning, Deep Learning, Natural Language Processing, Data Mining, Statistical Methods",
@@ -18,7 +18,8 @@ export const Education = () => {
       degree: "Bachelor of Engineering in Electronics and Telecommunication",
       institution: "Mumbai University",
       location: "Mumbai, India",
-      period: "2016 - 2020",
+      period: "2017 - 2021",
+      cgpa: "7.78/10",
       details: [
         "Coursework: Digital Signal Processing, Computer Networks, Data Structures & Algorithms, Database Management",
         "Gained foundational knowledge in programming, signal processing, and systems design",
