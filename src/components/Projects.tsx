@@ -4,39 +4,39 @@ import { ExternalLink, Github } from "lucide-react";
 export const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-      tech: ["React", "Node.js", "MongoDB", "Stripe", "JWT"],
-      github: "https://github.com/mohitbhoir789/ecommerce-platform",
-      live: "https://ecommerce-demo.netlify.app",
+      title: "Movie Recommendation Chatbot",
+      description: "Developed a semantic-search-based chatbot using a dataset of 343K+ IMDb movies (2000–2024). Used Hugging Face embeddings + Pinecone vector DB to enable real-time recommendation retrieval with under 1-second latency. Achieved over 92% accuracy in matching user query intents.",
+      image: "https://images.unsplash.com/photo-1489599516482-2b6bfdc2b62a?w=600&h=400&fit=crop",
+      tech: ["Python", "RAG", "Hugging Face", "Pinecone", "PostgreSQL", "TMDb API"],
+      github: "https://github.com/mohitbhoir789/movie-recommendation-chatbot",
+      live: "#",
       featured: true
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
-      tech: ["React", "Firebase", "Material-UI", "Socket.io"],
-      github: "https://github.com/mohitbhoir789/task-manager",
-      live: "https://task-manager-demo.netlify.app",
+      title: "Statistical Analysis of Corporate Takeovers",
+      description: "Analyzed takeover data from 126 U.S. firms over 8 years to identify predictors of acquisition likelihood. Built classification models (Poisson regression, Random Forest, XGBoost) with logistic regression achieving AUC = 0.78 and 77% accuracy.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+      tech: ["Python", "Scikit-learn", "Regression", "XGBoost", "Statistical Analysis"],
+      github: "https://github.com/mohitbhoir789/corporate-takeover-analysis",
+      live: "#",
       featured: true
     },
     {
-      title: "Weather Dashboard",
-      description: "A responsive weather application that provides detailed weather information with beautiful UI and location-based forecasts.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",
-      tech: ["React", "OpenWeather API", "Chart.js", "Tailwind CSS"],
-      github: "https://github.com/mohitbhoir789/weather-dashboard",
-      live: "https://weather-app-demo.netlify.app",
+      title: "Cricket Analysis Dashboard",
+      description: "Created an interactive Tableau dashboard using 1.2M+ ODI ball-by-ball records (2002–2023) to analyze player and team performance. Performed SQL-based ETL and implemented LOD calculations to generate 20+ KPIs for match summaries.",
+      image: "https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=600&h=400&fit=crop",
+      tech: ["SQL", "Tableau", "LOD Calculations", "KPI Metrics", "Data ETL"],
+      github: "https://github.com/mohitbhoir789/cricket-analysis-dashboard",
+      live: "#",
       featured: false
     },
     {
-      title: "Portfolio Website",
-      description: "A modern, responsive portfolio website showcasing my projects and skills with smooth animations and optimized performance.",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop",
-      tech: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      github: "https://github.com/mohitbhoir789/portfolio",
-      live: "https://mohitbhoir789.github.io/portfolio/",
+      title: "Automated Testing Framework",
+      description: "Automated regression test suites using Selenium and Robot Framework at Amdocs, reducing release cycles by 30% and boosting deployment efficiency. Achieved 95% test accuracy and accelerated QA feedback loops.",
+      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop",
+      tech: ["Selenium", "Robot Framework", "Python", "API Testing", "ServiceNow"],
+      github: "https://github.com/mohitbhoir789/automation-framework",
+      live: "#",
       featured: false
     }
   ];
@@ -50,7 +50,7 @@ export const Projects = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Here are some of my recent projects that showcase my skills and experience
+            Here are some of my recent projects showcasing data science, machine learning, and software development skills
           </p>
         </div>
 

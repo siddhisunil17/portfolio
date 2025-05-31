@@ -13,10 +13,11 @@ export const Hero = () => {
             </span>
           </h1>
           <p className="text-xl sm:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Full Stack Developer crafting digital experiences with modern technologies
+            Data Science Graduate & Software Development Engineer
           </p>
           <p className="text-lg text-gray-500 mb-12 max-w-2xl mx-auto">
-            Passionate about building scalable web applications and solving complex problems with clean, efficient code.
+            Graduate student in Data Science with hands-on experience in AI/ML, data pipelines, algorithm design, and dashboarding. 
+            Known for strong attention to detail and analytical thinking.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">

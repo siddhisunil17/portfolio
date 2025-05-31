@@ -32,13 +32,13 @@ export const Contact = () => {
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Phone",
-      details: "+91 9876543210",
-      link: "tel:+919876543210"
+      details: "959-995-0104",
+      link: "tel:+19599950104"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Location",
-      details: "Mumbai, India",
+      details: "Willimantic, CT 06226",
       link: "#"
     }
   ];
@@ -52,7 +52,7 @@ export const Contact = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Let's discuss your project or just say hello. I'm always open to new opportunities and collaborations.
+            Let's discuss your project or explore collaboration opportunities. I'm always open to new data science challenges and research opportunities.
           </p>
         </div>
 
@@ -62,9 +62,9 @@ export const Contact = () => {
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Let's Connect</h3>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                I'm always interested in hearing about new projects and opportunities. 
-                Whether you're a company looking to hire, or you're someone who has a project in mind, 
-                I'd love to hear from you.
+                I'm always interested in hearing about new data science projects, research opportunities, 
+                and collaborations. Whether you're looking for someone with expertise in machine learning, 
+                data analysis, or software development, I'd love to hear from you.
               </p>
             </div>
 
@@ -152,7 +152,7 @@ export const Contact = () => {
         {/* Footer */}
         <div className="mt-20 pt-8 border-t border-gray-200 text-center">
           <p className="text-gray-600">
-            © 2024 Mohit Bhoir. Built with React, TypeScript, and Tailwind CSS.
+            © 2024 Mohit Bhoir. Data Science Graduate Student at University of Connecticut.
           </p>
         </div>
       </div>

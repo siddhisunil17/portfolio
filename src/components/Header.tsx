@@ -8,6 +8,7 @@ export const Header = () => {
   const navItems = [
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
+    { name: "Experience", href: "#experience" },
     { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
   ];
@@ -50,7 +51,7 @@ export const Header = () => {
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com/in/mohitbhoir"
+              href="https://linkedin.com/in/mohitbhoir789"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
@@ -100,7 +101,7 @@ export const Header = () => {
                   <Github size={20} />
                 </a>
                 <a
-                  href="https://linkedin.com/in/mohitbhoir"
+                  href="https://linkedin.com/in/mohitbhoir789"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-blue-600 transition-colors duration-200"

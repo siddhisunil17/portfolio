@@ -1,27 +1,27 @@
 
-import { Code, Database, Globe, Smartphone } from "lucide-react";
+import { GraduationCap, Brain, Database, Code } from "lucide-react";
 
 export const About = () => {
   const highlights = [
     {
-      icon: <Code className="w-6 h-6" />,
-      title: "Frontend Development",
-      description: "Modern React, TypeScript, and responsive design"
+      icon: <GraduationCap className="w-6 h-6" />,
+      title: "Education",
+      description: "MS in Data Science (UConn) - GPA: 3.78/4.0, BE in Electronics Engineering"
+    },
+    {
+      icon: <Brain className="w-6 h-6" />,
+      title: "AI/ML Expertise", 
+      description: "Machine Learning, Deep Learning, NLP, Classification, Regression, Time-Series Forecasting"
     },
     {
       icon: <Database className="w-6 h-6" />,
-      title: "Backend Development", 
-      description: "Node.js, Python, and database management"
+      title: "Data Engineering",
+      description: "Data pipelines, ETL processes, PostgreSQL, MongoDB, Power BI dashboards"
     },
     {
-      icon: <Globe className="w-6 h-6" />,
-      title: "Web Technologies",
-      description: "Full-stack web application development"
-    },
-    {
-      icon: <Smartphone className="w-6 h-6" />,
-      title: "Mobile Development",
-      description: "Cross-platform mobile app development"
+      icon: <Code className="w-6 h-6" />,
+      title: "Software Development",
+      description: "Python, R, SQL, JavaScript, automation tools, API testing"
     }
   ];
 
@@ -38,17 +38,18 @@ export const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-600 leading-relaxed">
-              I'm a passionate full-stack developer with a strong foundation in modern web technologies. 
-              With experience in both frontend and backend development, I love creating digital solutions 
-              that make a real impact.
+              I'm a graduate student in Data Science at the University of Connecticut with hands-on experience 
+              in AI/ML, data pipelines, algorithm design, and dashboarding. I have over 3 years of professional 
+              experience as a Software Development Engineer at Amdocs.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              My journey in software development has equipped me with skills in React, Node.js, Python, 
-              and various databases. I'm always eager to learn new technologies and take on challenging projects.
+              My expertise spans machine learning, deep learning, natural language processing, and data mining. 
+              I'm passionate about improving data quality and operational efficiency through machine learning, 
+              cloud computing, and statistics.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              When I'm not coding, you can find me exploring new tech trends, contributing to open-source projects, 
-              or sharing knowledge with the developer community.
+              Known for strong attention to detail and analytical thinking, I'm an excellent communicator 
+              and team collaborator, seeking to leverage my background to support impactful, data-driven decisions.
             </p>
           </div>
 
