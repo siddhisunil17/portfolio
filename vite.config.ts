@@ -20,5 +20,8 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+<<<<<<< HEAD
   base: "/", // Changed from "/mohit-portfolio-fix/" to fix routing
+=======
+>>>>>>> 7e56dfb (Rollback deployment configurations for local development)
 }));
