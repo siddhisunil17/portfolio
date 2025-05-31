@@ -19,4 +19,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  base: "/mohit-portfolio-fix/", // Base URL for GitHub Pages
 }));
