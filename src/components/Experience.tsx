@@ -9,7 +9,7 @@ export const Experience = () => {
       location: "Pune, India",
       duration: "Jul 2021 - Jul 2024",
       type: "Full-time",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Amdocs_logo.svg/2560px-Amdocs_logo.svg.png",
+      logo: "/images/logos/amdocs.svg",
       achievements: [
         "Automated regression test suites using Selenium and Robot Framework, reducing release cycles by 30% and boosting deployment efficiency",
         "Engineered scalable ServiceNow workflows that eliminated ~40% of repetitive manual tasks, streamlining request processing time by 25%",
@@ -68,7 +68,7 @@ export const Experience = () => {
                         <img 
                           src={exp.logo} 
                           alt={`${exp.company} logo`}
-                          className="w-16 h-16 object-contain rounded-lg bg-white p-2 border border-gray-200"
+                          className="w-24 h-16 object-contain rounded-lg bg-white p-2 border border-gray-200"
                         />
                         <div>
                           <h3 className="text-2xl font-bold text-gray-900 mb-2">{exp.title}</h3>
