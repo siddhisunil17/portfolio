@@ -9,7 +9,7 @@ export const Experience = () => {
       location: "Pune, India",
       duration: "Jul 2021 - Jul 2024",
       type: "Full-time",
-      logo: "/images/logos/amdocs.svg",
+      logo: "/images/logos/amdocs.png",
       achievements: [
         "Automated regression test suites using Selenium and Robot Framework, reducing release cycles by 30% and boosting deployment efficiency",
         "Engineered scalable ServiceNow workflows that eliminated ~40% of repetitive manual tasks, streamlining request processing time by 25%",
