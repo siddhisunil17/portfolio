@@ -1,5 +1,6 @@
 
 import { Calendar, MapPin, TrendingUp } from "lucide-react";
+import { getAssetPath } from "@/lib/asset-path";
 
 export const Experience = () => {
   const experiences = [
@@ -66,7 +67,7 @@ export const Experience = () => {
                     <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-4">
                       <div className="flex items-start gap-4 mb-4 lg:mb-0">
                         <img 
-                          src={exp.logo} 
+                          src={exp.logo.startsWith('http') ? exp.logo : getAssetPath(exp.logo)} 
                           alt={`${exp.company} logo`}
                           className="w-24 h-16 object-contain rounded-lg bg-white p-2 border border-gray-200"
                         />
