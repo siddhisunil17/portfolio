@@ -1,4 +1,3 @@
-
 import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { useState } from "react";
 
@@ -71,24 +70,23 @@ export const Contact = () => {
       setIsSubmitting(false);
     }
   };
-
   const contactInfo = [
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      details: "mohitbhoir789@gmail.com",
-      link: "mailto:mohitbhoir789@gmail.com"
+      details: "siddhisu@buffalo.edu",
+      link: "mailto:siddhisu@buffalo.edu"
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Phone",
-      details: "959-995-0104",
-      link: "tel:+19599950104"
+      details: "+1 716-465-1313",
+      link: "tel:+17164651313"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Location",
-      details: "Willimantic, CT 06226",
+      details: "Buffalo, NY 14214",
       link: "#"
     }
   ];
@@ -102,7 +100,7 @@ export const Contact = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Let's discuss your project or explore collaboration opportunities. I'm always open to new data science challenges and research opportunities.
+            Let's discuss your project or explore opportunities in data science and machine learning. I'm always open to new challenges and collaborations.
           </p>
         </div>
 
@@ -223,10 +221,9 @@ export const Contact = () => {
           </div>
         </div>
 
-        {/* Footer */}
-        <div className="mt-20 pt-8 border-t border-gray-200 text-center">
+        {/* Footer */}        <div className="mt-20 pt-8 border-t border-gray-200 text-center">
           <p className="text-gray-600">
-            © 2024 Mohit Bhoir. Data Science Graduate Student at University of Connecticut.
+            © 2025 Siddhi Nalawade. Software Developer & Designer.
           </p>
         </div>
       </div>

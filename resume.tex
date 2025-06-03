@@ -1,0 +1,280 @@
+%-------------------------
+% Resume in Latex
+% Author : Siddhi Sunil Nalawade
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+
+% Use a font with better support for small caps and bold
+\usepackage{libertine} % Libertine provides good support for small caps in bold
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage{ifthen}
+\usepackage{enumitem}
+\usepackage{lmodern}
+
+% Set appropriate footskip to avoid warning
+\setlength{\footskip}{15pt}
+
+% Specify hyphenation rules
+\hyphenation{App-li-ca-tion Data-Science multi-col-umn im-prove-ment ex-pe-ri-ence}
+
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\addtolength{\textwidth}{-0.1in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeUniSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1,} \textit{\small #4}  & \textbf{\small #2} \\
+      \textit{\textbf{\small#3}} 
+      \ifthenelse{\equal{#5}{}}{}{& {\small \textbf{GPA: } #5}} \\
+    \end{tabular*}\vspace{-7pt}
+
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubSubheading}[1]{
+    \item
+    
+    \textit{\small#1} \\
+    \vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    {\Huge \scshape Siddhi Nalawade} \\ \vspace{1pt}
+    Buffalo, NY 14214 \\ \vspace{1pt}
+    \small 716-465-1313 \textbar{} \href{mailto:siddhisu@buffalo.edu}{\underline{siddhisu@buffalo.edu}} \textbar{} 
+    \href{https://linkedin.com/in/siddhi-nalawade17/}{LinkedIn} \textbar{} 
+    \href{https://github.com/siddhisunil17}{GitHub}
+
+    \vspace{-9pt}
+\end{center}
+
+
+
+%-----------Summary-----------
+\noindent\textbf{\large Summary} \\[-0.3cm] % Section Heading: 12 pts, bold
+\noindent\rule{\textwidth}{1pt} % Horizontal line immediately below Summary heading
+\textbf {Data Science and Software Engineering graduate student} with experience in biometric authentication, cryptographic protocols, and machine learning. Skilled in building scalable ML pipelines, secure APIs, and privacy-preserving systems through work at Retica Technologies and Accenture. Passionate about developing secure, data-driven solutions for real-world applications.
+
+\vspace{-0.2cm}
+
+  
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+  \resumeUniSubheading
+    {University at Buffalo}{Aug 2024 -- present}
+    {Master of Science in Data Science}{Buffalo, NY}{}
+
+  \begin{tabular}{@{}l p{440pt}@{}}
+    Related courses: \space & \small Machine Learning, Statistical Learning , Data Intensive Computing, Data Models and Query Language, Probability Theory, Statistical Learning \& Data Mining, Predictive Modeling
+  \end{tabular}
+
+  \resumeUniSubheading
+    {University of Mumbai}{June 2021}
+    {Bachelor of Engineering in Electronics Engineering}{Mumbai, India}{}
+
+\resumeSubHeadingListEnd
+  \vspace{-0.4cm}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in]
+    \item \textbf{ML \& Statistical Modeling:} Predictive modeling, classification, clustering, neural networks, time series analysis, feature engineering, PCA, performance evaluation, model validation, biometric data analysis
+    \item \textbf{Programming \& ML Frameworks:} Python, SQL, R, Java, PyTorch, TensorFlow, Keras, Scikit-learn, Pandas, NumPy, SciPy, MLFlow, Flask, Streamlit, exploratory data analysis, model deployment, Docker containers, metric-based optimization
+    \item \textbf{Data Engineering \& Infrastructure:} Apache Spark, Hadoop, Google BigQuery, MySQL, PostgreSQL, Oracle, SQLite3, MongoDB, data pipelines, data fragmentation, privacy-preserving systems, biometric API integration
+    \item \textbf{Security \& Identity Technologies:} Biometric authentication, cryptographic protocols, secure API development, data distribution methods, privacy-preserving technologies, identity verification systems
+    \item \textbf{Visualization \& Reporting:} Tableau, Power BI, Matplotlib, Seaborn, executive dashboards, model performance tracking, stakeholder communication, technical reporting
+    \item \textbf{Collaboration \& Delivery:} Agile workflows, code reviews, cross-functional collaboration, remote work coordination, DevOps tools, version control (GitHub), reproducibility standards
+\end{itemize}
+
+ \vspace{-20pt}
+
+%-----------EXPERIENCE-----------
+\section{ Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Retica Technologies (CosmosGenerate, Inc.)}{May 2025 – Present}
+      {Software Engineer/ Data Science Intern} {Remote/ New York, USA}
+      \resumeItemListStart
+        \resumeItem{Developed and optimized biometric authentication APIs using secure, scalable prototypes, enhancing accuracy and performance for high-security applications.}
+        \resumeItem{Analyzed biometric data and supported cryptographic protocol research to improve match precision and data security.}
+        \resumeItem{Engineered privacy-preserving techniques including data fragmentation and distribution to prevent unauthorized data reconstruction.}
+        \resumeItem{Collaborated cross-functionally on API integrations, participated in code reviews, and contributed to R\&D in identity verification technologies.}
+        \resumeItemListEnd
+        
+    \resumeSubheading
+      {Accenture Solution PVT.LTD}{Dec 2021 -- Jul 2024}
+      {Software Analyst}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{Analyzed large datasets using SQL in Oracle SQL Developer to extract actionable insights, supporting data-driven business decisions through comprehensive business intelligence reports.}
+        \resumeItem{Optimized data workflows with Shell scripting and UNIX commands, improving data processing efficiency by 15\% and enhancing data pipeline reliability.}
+        \resumeItem{Improved data quality and integrity by 20\% through rigorous validation checks, while automating incident tracking in ServiceNow, reducing resolution time by 25\% for data-related issues.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Internship Program}{Jun 2020 -- Aug 2020}
+      {Data Science Intern}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{Developed and optimized classification and regression models in Python, focusing on predictive analytics, model accuracy enhancement, and feature engineering techniques.}
+        \resumeItem{Engineered a K-NN-based Heart Disease Classifier, applying supervised learning and advanced data preprocessing on large datasets for precise disease risk prediction.}
+        
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-20pt}
+
+%-----------PROJECTS-----------
+\section*{Projects \hfill {\small \href{}{}}}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+     \resumeProjectHeading
+          {\textbf{Handwritten Digit Classification Pipeline} $|$ \emph{Logistic Regression, Random Forest, XGBoost, MLFlow, Docker, Streamlit}}{}
+          \resumeItemListStart
+            \resumeItem{ Developed an end-to-end machine learning pipeline for handwritten digit recognition using the MNIST dataset, attaining 99\% accuracy with XGBoost and Random Forest, leveraging SQL-based data transformation, feature engineering, and PCA for dimensionality reduction.}
+            \resumeItem{Deployed a real-time Streamlit app with scalable deployment via Docker and integrated MLFlow for performance tracking, enhancing accessibility for automation in education and document processing.}
+            \resumeItemListEnd 
+            \vspace{-17pt}
+            
+      \resumeProjectHeading
+          {\textbf{Short-Term Temperature Forecasting (ARIMA-LSTM Hybrid Model)} $|$ \emph{R, Time Series Forecasting}}{}
+          \resumeItemListStart
+            \resumeItem{Created and optimized a hybrid ARIMA-LSTM model to forecast short-term temperature fluctuations across 35 U.S. cities, achieving RMSE < 0.03 through advanced time series analysis}
+            \resumeItem{Supported data-driven decision-making in agriculture, energy, and urban development by providing climate forecasts for proactive planning.}
+            \resumeItemListEnd 
+            \vspace{-17pt}
+          
+      \resumeProjectHeading
+          {\textbf{Caption Bot with Assistive Voice} $|$ \emph{CNN, LSTM, Flask, API Integration}}{}
+          \resumeItemListStart
+            \resumeItem{Designed and deployed an interactive image captioning system combining CNN (ResNet-50) and
+            LSTM models, achieving 95\% caption accuracy through effective model training and evaluation.}
+            \resumeItem{Integrated an assistive voice API to enhance accessibility for visually impaired users, showcasing a practical application of deep learning models.}
+          \resumeItemListEnd
+          \vspace{-17pt}
+          
+      \resumeProjectHeading
+          {\textbf{Personalized Tourism Recommender using Chatbot} $|$ \emph{Django, Dialogflow, API calls}}{}
+          \resumeItemListStart
+            \resumeItem{Constructed a rule-based recommendation engine with AI-driven chatbot integration via Dialogflow, delivering personalized travel suggestions.}
+            \resumeItem{Increased user engagement by 30\% through dynamic UI design, API-based data integration, and cloud functionalities.}
+      \resumeItemListEnd 
+          \vspace{-17pt}
+          
+        
+    \resumeSubHeadingListEnd
+\vspace{-20pt}
+
+\end{document}

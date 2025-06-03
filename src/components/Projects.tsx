@@ -1,42 +1,41 @@
-
 import { ExternalLink, Github } from "lucide-react";
 import { getAssetPath } from "@/lib/asset-path";
 
 export const Projects = () => {
   const projects = [
     {
-      title: "Movie Recommendation Chatbot",
-      description: "Developed a semantic-search-based chatbot using a dataset of 343K+ IMDb movies (2000–2024). Used Hugging Face embeddings + Pinecone vector DB to enable real-time recommendation retrieval with under 1-second latency. Achieved over 92% accuracy in matching user query intents.",
-      image: "images/projects/movie-chatbot.png",
-      tech: ["Python", "RAG", "Hugging Face", "Pinecone", "PostgreSQL", "TMDb API"],
-      github: "https://github.com/mohitbhoir789/movie-recommendation-chatbot",
+      title: "Handwritten Digit Classification Pipeline",
+      description: "Developed an end-to-end machine learning pipeline for handwritten digit recognition using the MNIST dataset. Achieved 99% accuracy with XGBoost and Random Forest, leveraging SQL-based data transformation, feature engineering, and PCA for dimensionality reduction. Deployed a real-time Streamlit app with Docker and MLFlow integration.",
+      image: "images/projects/digit-recognition.png",
+      tech: ["Logistic Regression", "Random Forest", "XGBoost", "MLFlow", "Docker", "Streamlit"],
+      github: "https://github.com/siddhisunil17/digit-recognition",
       live: "#",
       featured: true
     },
     {
-      title: "Statistical Analysis of Corporate Takeovers",
-      description: "Analyzed takeover data from 126 U.S. firms over 8 years to identify predictors of acquisition likelihood. Built classification models (Poisson regression, Random Forest, XGBoost) with logistic regression achieving AUC = 0.78 and 77% accuracy.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-      tech: ["Python", "Scikit-learn", "Regression", "XGBoost", "Statistical Analysis"],
-      github: "https://github.com/mohitbhoir789/corporate-takeover-analysis",
+      title: "Short-Term Temperature Forecasting",
+      description: "Created and optimized a hybrid ARIMA-LSTM model to forecast short-term temperature fluctuations across 35 U.S. cities, achieving RMSE < 0.03 through advanced time series analysis. Supported data-driven decision-making in agriculture, energy, and urban development.",
+      image: "images/projects/temperature-forecast.png",
+      tech: ["R", "ARIMA", "LSTM", "Time Series", "Statistical Analysis"],
+      github: "https://github.com/siddhisunil17/temperature-forecast",
       live: "#",
       featured: true
     },
     {
-      title: "Cricket Analysis Dashboard",
-      description: "Created an interactive Tableau dashboard using 1.2M+ ODI ball-by-ball records (2002–2023) to analyze player and team performance. Performed SQL-based ETL and implemented LOD calculations to generate 20+ KPIs for match summaries.",
-      image: "https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=600&h=400&fit=crop",
-      tech: ["SQL", "Tableau", "LOD Calculations", "KPI Metrics", "Data ETL"],
-      github: "https://github.com/mohitbhoir789/cricket-analysis-dashboard",
+      title: "Caption Bot with Assistive Voice",
+      description: "Designed and deployed an interactive image captioning system combining CNN (ResNet-50) and LSTM models, achieving 95% caption accuracy through effective model training and evaluation. Integrated assistive voice API to enhance accessibility for visually impaired users.",
+      image: "images/projects/caption-bot.png",
+      tech: ["CNN", "LSTM", "Flask", "ResNet-50", "API Integration"],
+      github: "https://github.com/siddhisunil17/caption-bot",
       live: "#",
       featured: false
     },
     {
-      title: "Automated Testing Framework",
-      description: "Automated regression test suites using Selenium and Robot Framework at Amdocs, reducing release cycles by 30% and boosting deployment efficiency. Achieved 95% test accuracy and accelerated QA feedback loops.",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop",
-      tech: ["Selenium", "Robot Framework", "Python", "API Testing", "ServiceNow"],
-      github: "https://github.com/mohitbhoir789/automation-framework",
+      title: "Personalized Tourism Recommender",
+      description: "Constructed a rule-based recommendation engine with AI-driven chatbot integration via Dialogflow, delivering personalized travel suggestions. Increased user engagement by 30% through dynamic UI design, API-based data integration, and cloud functionalities.",
+      image: "images/projects/tourism-recommender.png",
+      tech: ["Django", "Dialogflow", "API Integration", "Machine Learning", "Cloud Computing"],
+      github: "https://github.com/siddhisunil17/tourism-recommender",
       live: "#",
       featured: false
     }

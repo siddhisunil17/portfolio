@@ -1,36 +1,47 @@
-
 import { Calendar, MapPin, TrendingUp } from "lucide-react";
 import { getAssetPath } from "@/lib/asset-path";
 
 export const Experience = () => {
   const experiences = [
     {
-      title: "Software Development Engineer",
-      company: "Amdocs, India",
-      location: "Pune, India",
-      duration: "Jul 2021 - Jul 2024",
-      type: "Full-time",
-      logo: "/images/logos/amdocs.png",
+      title: "Software Engineer / Data Science Intern",
+      company: "Retica Technologies (CosmosGenerate, Inc.)",
+      location: "Remote / New York, USA",
+      duration: "May 2025 - Present",
+      type: "Internship",
+      logo: "/images/logos/retica.png",
       achievements: [
-        "Automated regression test suites using Selenium and Robot Framework, reducing release cycles by 30% and boosting deployment efficiency",
-        "Engineered scalable ServiceNow workflows that eliminated ~40% of repetitive manual tasks, streamlining request processing time by 25%",
-        "Built 5+ real-time dashboards in Power BI, enhancing reporting efficiency and enabling data-driven decision-making for key stakeholders",
-        "Collaborated with 4+ cross-functional teams to design AI-based automation tools, improving accuracy and team productivity by 20%",
-        "Integrated regression testing pipelines within development cycles, achieving 95% test accuracy and accelerating QA feedback loops",
-        "Developed scripts to test APIs for Order Management System (OMS) and Customer Service Provisioning (CSP), ensuring robust backend integration"
+        "Developed and optimized biometric authentication APIs using secure, scalable prototypes",
+        "Analyzed biometric data and supported cryptographic protocol research to improve match precision",
+        "Engineered privacy-preserving techniques including data fragmentation and distribution",
+        "Collaborated cross-functionally on API integrations and identity verification technologies"
       ]
     },
     {
-      title: "Media Analytics and Network Intern",
-      company: "Doordarshan, Mumbai",
-      location: "Mumbai, India", 
-      duration: "Dec 2019 - Jan 2020",
-      type: "Internship",
-      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Doordarshan_Logo.svg/1200px-Doordarshan_Logo.svg.png",
+      title: "Software Analyst",
+      company: "Accenture Solution PVT.LTD",
+      location: "Mumbai, India",
+      duration: "Dec 2021 - Jul 2024",
+      type: "Full-time",
+      logo: "/images/logos/accenture.png",
       achievements: [
-        "Analyzed broadcast and signal data to identify viewership trends across 50+ programs",
-        "Maintained electronics and network systems for 3 channels, ensuring 99.9% uptime",
-        "Supported diagnostics that reduced data and signal errors by 15%"
+        "Analyzed large datasets using SQL in Oracle SQL Developer for actionable business insights",
+        "Optimized data workflows with Shell scripting and UNIX commands, improving efficiency by 15%",
+        "Improved data quality and integrity by 20% through rigorous validation checks",
+        "Automated incident tracking in ServiceNow, reducing resolution time by 25%"
+      ]
+    },
+    {
+      title: "Data Science Intern",
+      company: "Internship Program",
+      location: "Mumbai, India",
+      duration: "Jun 2020 - Aug 2020",
+      type: "Internship",
+      logo: "/images/logos/intern.png",
+      achievements: [
+        "Developed classification and regression models using Python for predictive analytics",
+        "Engineered a K-NN-based Heart Disease Classifier with supervised learning techniques",
+        "Implemented advanced data preprocessing on large datasets for disease risk prediction"
       ]
     }
   ];
@@ -44,7 +55,7 @@ export const Experience = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Over 3 years of professional experience in software development, automation, and data analytics
+            Experience in software development, data science, and machine learning
           </p>
         </div>
 

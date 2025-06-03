@@ -4,26 +4,26 @@ export const Education = () => {
   const education = [
     {
       degree: "Master of Science in Data Science",
-      institution: "University of Connecticut",
-      location: "Storrs, Connecticut",
-      period: "2024 - 2025",
+      institution: "University at Buffalo",
+      location: "Buffalo, NY",
+      period: "2024 - Present",
       gpa: "3.78/4.0",
       details: [
-        "Coursework: Machine Learning, Deep Learning, Natural Language Processing, Data Mining, Statistical Methods",
-        "Projects included developing machine learning models, natural language processing applications, and data analysis solutions",
-        "Enhanced technical skills in Python, R, SQL, and various data science libraries and frameworks"
+        "Coursework: Machine Learning, Statistical Learning, Data Intensive Computing, Data Models and Query Language",
+        "Advanced studies in Probability Theory, Statistical Learning & Data Mining, Predictive Modeling",
+        "Developing expertise in data science methodologies and advanced analytical techniques"
       ]
     },
     {
-      degree: "Bachelor of Engineering in Electronics and Telecommunication",
-      institution: "Mumbai University",
+      degree: "Bachelor of Engineering in Electronics Engineering",
+      institution: "University of Mumbai",
       location: "Mumbai, India",
       period: "2017 - 2021",
-      cgpa: "7.78/10",
+      gpa: "7.78/10",
       details: [
-        "Coursework: Digital Signal Processing, Computer Networks, Data Structures & Algorithms, Database Management",
-        "Gained foundational knowledge in programming, signal processing, and systems design",
-        "Developed strong analytical and problem-solving abilities through engineering projects"
+        "Coursework: Digital Signal Processing, Computer Networks, Data Structures & Algorithms",
+        "Gained foundational knowledge in electronics, signal processing, and engineering principles",
+        "Developed strong analytical and problem-solving abilities through practical projects"
       ]
     }
   ];

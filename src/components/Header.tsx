@@ -19,9 +19,8 @@ export const Header = () => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <a href="#" className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Mohit Bhoir
+          <div className="flex-shrink-0">            <a href="#" className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              Siddhi Nalawade
             </a>
           </div>
 
@@ -41,10 +40,9 @@ export const Header = () => {
             </div>
           </div>
 
-          {/* Social Links */}
-          <div className="hidden md:flex items-center space-x-4">
+          {/* Social Links */}          <div className="hidden md:flex items-center space-x-4">
             <a
-              href="https://github.com/mohitbhoir789"
+              href="https://github.com/siddhisunil17"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
@@ -52,7 +50,7 @@ export const Header = () => {
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com/in/mohitbhoir789"
+              href="https://linkedin.com/in/siddhi-nalawade"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
@@ -60,7 +58,7 @@ export const Header = () => {
               <Linkedin size={20} />
             </a>
             <a
-              href="mailto:mohitbhoir789@gmail.com"
+              href="mailto:siddhisunil123@gmail.com"
               className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
             >
               <Mail size={20} />

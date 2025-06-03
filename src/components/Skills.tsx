@@ -1,44 +1,47 @@
-
 export const Skills = () => {
   const skillCategories = [
     {
-      category: "Languages",
+      category: "ML & Data Science",
       skills: [
-        { name: "Python", color: "from-blue-500 to-cyan-500" },
-        { name: "R", color: "from-blue-600 to-blue-800" },
-        { name: "SQL", color: "from-orange-500 to-red-500" },
-        { name: "Java", color: "from-red-500 to-red-700" },
-        { name: "JavaScript", color: "from-yellow-400 to-yellow-600" }
+        { name: "Machine Learning", color: "from-blue-500 to-cyan-500" },
+        { name: "Statistical Modeling", color: "from-purple-500 to-purple-700" },
+        { name: "Predictive Modeling", color: "from-indigo-500 to-indigo-700" },
+        { name: "Feature Engineering", color: "from-blue-600 to-blue-800" },
+        { name: "Time Series Analysis", color: "from-cyan-500 to-teal-500" }
       ]
     },
     {
-      category: "Libraries/Frameworks",
+      category: "Programming & ML Frameworks",
       skills: [
-        { name: "TensorFlow", color: "from-orange-500 to-orange-700" },
-        { name: "PyTorch", color: "from-red-500 to-red-700" },
-        { name: "Scikit-Learn", color: "from-blue-500 to-blue-700" },
-        { name: "Pandas", color: "from-purple-500 to-purple-700" },
-        { name: "Flask", color: "from-gray-600 to-gray-800" }
+        { name: "Python", color: "from-green-500 to-green-700" },
+        { name: "SQL", color: "from-blue-500 to-blue-700" },
+        { name: "R", color: "from-red-500 to-red-700" },
+        { name: "Java", color: "from-orange-500 to-red-500" },
+        { name: "PyTorch", color: "from-orange-400 to-red-600" },
+        { name: "TensorFlow", color: "from-blue-600 to-indigo-600" },
+        { name: "Scikit-learn", color: "from-teal-500 to-teal-700" }
       ]
     },
     {
-      category: "Databases & Tools",
+      category: "Data Engineering & Tools",
       skills: [
-        { name: "PostgreSQL", color: "from-blue-700 to-indigo-700" },
+        { name: "Apache Spark", color: "from-orange-500 to-red-500" },
+        { name: "Hadoop", color: "from-yellow-500 to-yellow-700" },
+        { name: "Google BigQuery", color: "from-blue-400 to-blue-600" },
+        { name: "PostgreSQL", color: "from-blue-600 to-indigo-600" },
         { name: "MongoDB", color: "from-green-600 to-green-800" },
-        { name: "Power BI", color: "from-yellow-500 to-orange-500" },
-        { name: "Tableau", color: "from-blue-500 to-blue-700" },
-        { name: "AWS", color: "from-orange-400 to-orange-600" }
+        { name: "MLFlow", color: "from-purple-500 to-purple-700" }
       ]
     },
     {
-      category: "AI/ML Specializations",
+      category: "Visualization & Tools",
       skills: [
-        { name: "Machine Learning", color: "from-purple-500 to-purple-700" },
-        { name: "Deep Learning", color: "from-indigo-500 to-indigo-700" },
-        { name: "NLP", color: "from-green-500 to-green-700" },
-        { name: "Time Series", color: "from-cyan-500 to-cyan-700" },
-        { name: "Data Mining", color: "from-pink-500 to-pink-700" }
+        { name: "Tableau", color: "from-blue-500 to-blue-700" },
+        { name: "Power BI", color: "from-yellow-500 to-orange-500" },
+        { name: "Matplotlib", color: "from-purple-400 to-purple-600" },
+        { name: "Seaborn", color: "from-teal-500 to-teal-700" },
+        { name: "GitHub", color: "from-gray-600 to-gray-800" },
+        { name: "Docker", color: "from-blue-500 to-blue-700" }
       ]
     }
   ];
@@ -52,7 +55,7 @@ export const Skills = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            A comprehensive overview of my technical expertise across data science, machine learning, and software development
+            Comprehensive expertise in data science, machine learning, and software development technologies
           </p>
         </div>
 

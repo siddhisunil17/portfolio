@@ -1,27 +1,26 @@
-
-import { GraduationCap, Brain, Database, Code } from "lucide-react";
+import { GraduationCap, Brain, Database, Code, ChartBar } from "lucide-react";
 
 export const About = () => {
   const highlights = [
-    // {
-    //   icon: <GraduationCap className="w-6 h-6" />,
-    //   title: "Education",
-    //   description: "MS in Data Science, University of Connecticut (GPA: 3.78/4.0), BE in Electronics and Telecommunication Engineering, Mumbai University"
-    // },
     {
       icon: <Brain className="w-6 h-6" />,
-      title: "AI/ML Expertise", 
-      description: "Machine Learning, Deep Learning, NLP, Classification, Regression, Time-Series Forecasting"
+      title: "Machine Learning",
+      description: "Expertise in predictive modeling, classification, clustering, neural networks, and time series analysis"
+    },
+    {
+      icon: <Code className="w-6 h-6" />,
+      title: "Programming",
+      description: "Proficient in Python, SQL, R, Java, and ML frameworks like PyTorch, TensorFlow, and Scikit-learn"
     },
     {
       icon: <Database className="w-6 h-6" />,
       title: "Data Engineering",
-      description: "Data pipelines, ETL processes, PostgreSQL, MongoDB, Power BI dashboards"
+      description: "Experience with Spark, Hadoop, BigQuery, PostgreSQL, MongoDB, and data pipeline development"
     },
     {
-      icon: <Code className="w-6 h-6" />,
-      title: "Software Development",
-      description: "Python, R, SQL, JavaScript, automation tools, API testing"
+      icon: <ChartBar className="w-6 h-6" />,
+      title: "Data Visualization",
+      description: "Skilled in Tableau, Power BI, and creating executive dashboards for data-driven insights"
     }
   ];
 
@@ -38,18 +37,19 @@ export const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-600 leading-relaxed">
-              I'm a graduate student in Data Science at the University of Connecticut with hands-on experience 
-              in AI/ML, data pipelines, algorithm design, and dashboarding. I have over 3 years of professional 
-              experience as a Software Development Engineer at Amdocs.
+              I'm a Data Science and Software Engineering graduate student with extensive experience in biometric authentication, 
+              cryptographic protocols, and machine learning. My expertise lies in building scalable ML pipelines, secure APIs, 
+              and privacy-preserving systems.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              My expertise spans machine learning, deep learning, natural language processing, and data mining. 
-              I'm passionate about improving data quality and operational efficiency through machine learning, 
-              cloud computing, and statistics.
+              With experience at Retica Technologies and Accenture, I've developed strong skills in data analysis, 
+              machine learning model development, and software engineering. I'm passionate about developing secure, 
+              data-driven solutions for real-world applications.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Known for strong attention to detail and analytical thinking, I'm an excellent communicator 
-              and team collaborator, seeking to leverage my background to support impactful, data-driven decisions.
+              I have a strong foundation in statistical learning, data intensive computing, and predictive modeling. 
+              I'm always eager to tackle new challenges and collaborate on innovative projects that leverage data 
+              science for meaningful impact.
             </p>
           </div>
 
