@@ -13,12 +13,10 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
-      <Sonner />
-      <BrowserRouter basename="/portfolio">
+      <Sonner />      <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
+          <Route path="/portfolio" element={<Index />} />
+          <Route path="/portfolio/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
