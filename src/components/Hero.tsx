@@ -5,6 +5,13 @@ export const Hero = () => {
   return (
     <section className="h-screen flex items-center justify-center bg-gradient-to-r from-slate-50 via-white to-blue-50 px-4">
       <div className="text-center">
+        <div className="mb-8">
+          <img
+            src={getAssetPath("images/Photo1.jpg")}
+            alt="Siddhi Nalawade"
+            className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-blue-600 shadow-xl"
+          />
+        </div>
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-8">
           Hi, I'm{" "}
           <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
