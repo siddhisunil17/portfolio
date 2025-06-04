@@ -3,14 +3,14 @@
  * This handles the base path prefix for GitHub Pages deployment
  */
 export function getAssetPath(path: string): string {
-  // Remove leading slash if present to avoid double slashes
+  // If path is already an absolute URL, return it as is
+  if (path.startsWith('http')) {
+    return path;
+  }
+
+  // Remove leading slash if present
   const cleanPath = path.startsWith('/') ? path.slice(1) : path;
   
-  // If path is already an absolute URL (e.g., https://) return it as is
-  if (cleanPath.match(/^https?:\/\//)) {
-    return cleanPath;
-  }
-  
-  // Use the configured base path from Vite
+  // Use the fixed base path for GitHub Pages
   return `/portfolio/${cleanPath}`;
 }
